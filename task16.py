@@ -4,11 +4,7 @@
 # записаны N целых чисел Ai. Последняя строка содержит число X
 
 print('введите числа через пробел')
-numbers = input().split(" ")
+numbers = [int(i) for i in input().split(" ")]
 print('введите искомое число')
 number = int(input())
-counter = 0
-for i in numbers:
-    if int(i) == number:
-        counter+=1
-print(counter)
+print(numbers.count(number))
