@@ -9,6 +9,6 @@ def print_operation_table(operation, num_rows=6, num_columns=6):
         print(" ".join([str(operation(x, y)) for y in range(1, num_columns+1)]))
 
 
-print(print_operation_table(lambda x, y: x * y))
+print_operation_table(lambda x, y: x * y)
 
 # почему в конце добавляет None не понял
